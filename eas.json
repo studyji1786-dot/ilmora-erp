@@ -1,13 +1,28 @@
 {
-  "cli": {
-    "version": ">= 10.0.0"
-  },
-  "build": {
-    "preview": {
-      "android": {
-        "buildType": "apk"
-      }
+  "expo": {
+    "name": "ILMORA ERP",
+    "slug": "ilmora-erp",
+    "owner": "honey001",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#11141B"
     },
-    "production": {}
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./adaptive-icon.png",
+        "backgroundColor": "#11141B"
+      },
+      "package": "com.ilmora.erp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7dcbd778-af48-4b2f-b40a-f2497692dd90"
+      }
+    }
   }
 }
