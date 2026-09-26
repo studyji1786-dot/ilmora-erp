@@ -25,4 +25,6 @@ jobs:
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
           EAS_BUILD_SKIP_LOCKFILE_CHECK: "1"
-        run: eas build -p android --profile preview --non-interactive --no-wait
+        run: |
+          npx eas-cli project:init --id 7dcbd778-af48-4b2f-b40a-f2497692dd90 --force
+          eas build -p android --profile preview --non-interactive --no-wait
