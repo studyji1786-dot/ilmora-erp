@@ -24,6 +24,5 @@ jobs:
       - name: Build Standalone Preview APK
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
-        run: |
-          npx eas-cli project:init --account honey001 --force
-          eas build -p android --profile preview --non-interactive --no-wait
+          EAS_BUILD_SKIP_LOCKFILE_CHECK: "1"
+        run: eas build -p android --profile preview --non-interactive --no-wait
