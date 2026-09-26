@@ -1,29 +1,28 @@
 {
   "expo": {
-    "name": "playful-violet-pretzels",
-    "slug": "snack-df99eb2c-10ac-4582-9822-311bdb274587",
+    "name": "ILMORA ERP",
+    "slug": "ilmora-erp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "icon": "./icon.png",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#11141B"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./adaptive-icon.png",
+        "backgroundColor": "#11141B"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.ilmora.erp"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./favicon.png"
     }
   }
 }
