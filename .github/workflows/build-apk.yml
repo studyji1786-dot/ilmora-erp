@@ -18,12 +18,10 @@ jobs:
       - name: Setup EAS CLI
         run: npm install -g eas-cli@latest
 
-      - name: Install Project Dependencies
+      - name: Install Dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build Standalone APK via EAS
+      - name: Build Standalone Preview APK
         env:
           EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
-        run: |
-          npx eas-cli project:init --force
-          eas build --platform android --profile preview --non-interactive --no-wait
+        run: eas build -p android --profile preview --non-interactive --no-wait
