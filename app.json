@@ -2,6 +2,7 @@
   "expo": {
     "name": "ILMORA ERP",
     "slug": "ilmora-erp",
+    "owner": "honey001",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./icon.png",
@@ -11,18 +12,12 @@
       "resizeMode": "contain",
       "backgroundColor": "#11141B"
     },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./adaptive-icon.png",
         "backgroundColor": "#11141B"
       },
       "package": "com.ilmora.erp"
-    },
-    "web": {
-      "favicon": "./favicon.png"
     }
   }
 }
